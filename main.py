@@ -1,6 +1,4 @@
-# This is the template code for the CNE335 Final Project
-# Justin Ellis
-# CNE 335 Fall
+import server
 
 def print_program_info():
     # TODO - Change your name
@@ -9,5 +7,6 @@ def print_program_info():
 # This is the entry point to our program
 if __name__ == '__main__':
     print_program_info()
-    # TODO - Create a Server object
-    # TODO - Call Ping method and print the results
+    #The server.Server("34.209.138.165") in this case EC2 IP is 34.209.138.165
+    #The IP address is passed as a string to the Server class in the server.py module     
+    ec2Server = server.Server("34.209.138.165")  
